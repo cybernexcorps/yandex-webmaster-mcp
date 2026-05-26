@@ -28,7 +28,7 @@ SMOKE_HOST=yourhost.tld YANDEX_WEBMASTER_TOKEN=… npm run smoke
 ```
 
 The smoke test hits the live API. Read-only tools should PASS; write tools should show
-`DRY`. There are no mocks by design.
+`DRY` (a write tool that requires an extra argument such as a sitemap UUID will SKIP instead). There are no mocks by design.
 
 ## Conventions
 

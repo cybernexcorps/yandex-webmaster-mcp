@@ -13,7 +13,7 @@ A small, registry-driven TypeScript MCP server compiled to ESM and run over stdi
 - `src/server.ts` — MCP boilerplate: iterates the registry and registers each record as a
   tool, wrapping results/errors into MCP content.
 - `src/smoke-test.ts` — standalone live-API tester that exercises every read-only tool once
-  and verifies the dry-run shape of every write tool.
+  and verifies the dry-run shape of write tools (a write tool that also requires an extra argument, such as a sitemap UUID, is skipped instead).
 
 ## Data flow per tool call
 

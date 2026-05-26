@@ -98,7 +98,7 @@ Write tools return a dry-run preview unless called with `confirm: true`.
 | Variable | Required | Purpose |
 |----------|----------|---------|
 | `YANDEX_WEBMASTER_TOKEN` | yes | Yandex OAuth token |
-| `SMOKE_HOST` | no | Default host for `npm run smoke` (defaults to `example.com`) |
+| `SMOKE_HOST` | no | Host for `npm run smoke`; set to a host registered in YOUR Yandex account for a meaningful run (defaults to `example.com`) |
 | `SMOKE_BAD_TOKEN` | no | `1` to assert the bad-token error hint |
 | `SMOKE_IDN_HOST` | no | A Unicode host you own, to exercise IDN resolution in the smoke test |
 | `SMOKE_IDN_PUNYCODE` | no | Substring the resolved IDN `host_id` must contain |
