@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/social-preview.png" alt="Yandex Webmaster MCP — 29 tools for technical SEO on Yandex, exposed over the Model Context Protocol" width="820" />
+</p>
+
 # Yandex Webmaster MCP
 
 A [Model Context Protocol](https://modelcontextprotocol.io) server that exposes the

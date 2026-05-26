@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- Kelva GitHub social preview — CLI / tooling repo template (1280×640, GitHub OG size).
+     Recreated from the Kelva brand bundle "Kelva GitHub Social Previews.html" (CardCLI).
+     Brand tokens: coral #F28B6B / deep #D9543A / light #FFB59A · charcoal #1A1A2E · cream #F5F0EB. -->
+<link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --coral:#F28B6B; --coral-deep:#D9543A; --coral-light:#FFB59A;
+    --charcoal:#1A1A2E; --cream:#F5F0EB;
+    --label:rgba(26,26,46,0.55);
+    --type:"LINE Seed JP","Inter",ui-sans-serif,system-ui,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#f0eee9;}
+  .card{
+    width:1280px;height:640px;background:var(--cream);position:relative;
+    overflow:hidden;font-family:var(--type);
+  }
+  .grid{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;}
+  /* ── left ── */
+  .left{padding:56px 56px 56px 64px;display:flex;flex-direction:column;justify-content:space-between;}
+  .brandrow{display:flex;align-items:center;gap:14px;}
+  .monolabel{font-family:var(--mono);font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--label);}
+  .repopath{font-family:var(--mono);font-size:22px;color:var(--label);}
+  .repopath b{color:var(--charcoal);font-weight:700;}
+  h1{font-family:var(--type);font-size:56px;font-weight:700;letter-spacing:-1.8px;line-height:1.0;color:var(--charcoal);margin:14px 0 0;max-width:520px;}
+  .desc{font-family:var(--type);font-size:22px;line-height:1.4;color:var(--label);margin-top:20px;max-width:470px;font-weight:400;}
+  .chips{display:flex;align-items:center;gap:18px;}
+  .chip{display:flex;align-items:center;gap:10px;}
+  .dot{width:12px;height:12px;border-radius:999px;display:inline-block;}
+  .chiptxt{font-family:var(--mono);font-size:15px;color:rgba(26,26,46,0.7);}
+  /* ── right terminal ── */
+  .right{background:var(--charcoal);position:relative;overflow:hidden;display:flex;flex-direction:column;}
+  .chrome{display:flex;align-items:center;gap:8px;padding:20px 24px;border-bottom:1px solid rgba(245,240,235,0.08);position:relative;z-index:1;}
+  .tdot{width:12px;height:12px;border-radius:999px;display:inline-block;}
+  .ttitle{font-family:var(--mono);font-size:12px;color:rgba(245,240,235,0.4);margin-left:16px;letter-spacing:1px;}
+  .term{padding:40px 32px;flex:1;position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;gap:18px;}
+  .cmd{font-family:var(--mono);font-size:20px;color:var(--cream);line-height:1.5;}
+  .cmd .c{color:var(--coral);}
+  .out{font-family:var(--mono);font-size:16px;color:rgba(245,240,235,0.6);line-height:1.7;}
+  .out .g{color:#6FB586;}
+  .out .w{color:var(--cream);}
+  .cursor{background:var(--cream);width:9px;height:18px;display:inline-block;margin-left:8px;vertical-align:middle;}
+  .patt{position:absolute;inset:0;pointer-events:none;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="grid">
+      <!-- LEFT -->
+      <div class="left">
+        <div class="brandrow">
+          <svg viewBox="0 0 100 100" width="40" height="40" style="display:block">
+            <defs>
+              <linearGradient id="kc" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFB59A"/><stop offset="55%" stop-color="#F28B6B"/><stop offset="100%" stop-color="#D9543A"/>
+              </linearGradient>
+              <linearGradient id="kd" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#E07A5F"/><stop offset="100%" stop-color="#B83E26"/>
+              </linearGradient>
+            </defs>
+            <path d="M 20 50 L 45 25 L 45 75 Z" fill="url(#kd)"/>
+            <path d="M 45 25 L 80 10 L 60 50 L 80 90 L 45 75 Z" fill="url(#kc)"/>
+          </svg>
+          <span class="monolabel">kelva.tech · mcp</span>
+        </div>
+        <div>
+          <div class="repopath">cybernexcorps/<b>yandex-webmaster-mcp</b></div>
+          <h1>Yandex Webmaster MCP</h1>
+          <p class="desc">29 tools for technical SEO on Yandex — diagnostics, indexing, sitemaps, recrawl, and search analytics — exposed over the Model Context Protocol.</p>
+        </div>
+        <div class="chips">
+          <div class="chip"><span class="dot" style="background:#3178C6"></span><span class="chiptxt">TypeScript</span></div>
+          <span class="monolabel">MCP · stdio</span>
+        </div>
+      </div>
+      <!-- RIGHT terminal -->
+      <div class="right">
+        <svg class="patt" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 640 640">
+          <defs><pattern id="rh" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 20 16 L 24 20 L 20 24 L 16 20 Z" fill="#F28B6B" opacity="0.06"/>
+          </pattern></defs>
+          <rect width="640" height="640" fill="url(#rh)"/>
+        </svg>
+        <div class="chrome">
+          <span class="tdot" style="background:#FF5F57"></span>
+          <span class="tdot" style="background:#FEBC2E"></span>
+          <span class="tdot" style="background:#28C840"></span>
+          <span class="ttitle">kelva ~ /mcp</span>
+        </div>
+        <div class="term">
+          <div class="cmd"><span class="c">$ npx @cybernexcorps/yandex-webmaster-mcp</span></div>
+          <div class="out">
+            ▸ connecting to webmaster.yandex.net<br/>
+            ▸ auth: <span class="g">OAuth</span> · user resolved<br/>
+            ▸ registering tools…<br/>
+            <span class="g">✓ ready: 29 tools registered</span><span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
